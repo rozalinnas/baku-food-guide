@@ -1,309 +1,302 @@
-{\rtf1\ansi\ansicpg1252\cocoartf2822
-\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
-{\colortbl;\red255\green255\blue255;}
-{\*\expandedcolortbl;;}
-\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
-\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="43 hand-picked cafes, restaurants, local cuisine spots and hidden gems in Baku with exact order recommendations.">
+<title>Rozalina's Baku Food Guide</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-\f0\fs24 \cf0 <!DOCTYPE html>\
-<html lang="en">\
-<head>\
-<meta charset="UTF-8">\
-<meta name="viewport" content="width=device-width, initial-scale=1.0">\
-<meta name="description" content="43 hand-picked cafes, restaurants, local cuisine spots and hidden gems in Baku with exact order recommendations.">\
-<title>Rozalina's Baku Food Guide</title>\
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">\
-<style>\
-*, *::before, *::after \{ box-sizing: border-box; margin: 0; padding: 0; \}\
-\
-:root \{\
-  --black: #0D0B09;\
-  --parchment: #F2EDE4;\
-  --gold: #C9A84C;\
-  --muted: #8A7E74;\
-  --card-bg: #FAF7F3;\
-\}\
-\
-body \{\
-  background: var(--black);\
-  color: var(--parchment);\
-  font-family: 'DM Sans', sans-serif;\
-  min-height: 100vh;\
-  display: flex;\
-  flex-direction: column;\
-  align-items: center;\
-\}\
-\
-.hero \{\
-  width: 100%;\
-  max-width: 480px;\
-  padding: 56px 32px 40px;\
-  display: flex;\
-  flex-direction: column;\
-  align-items: center;\
-  text-align: center;\
-\}\
-\
-.pin-icon \{\
-  width: 48px;\
-  height: 48px;\
-  margin-bottom: 24px;\
-  opacity: 0;\
-  transform: translateY(-12px);\
-  animation: dropPin 0.7s cubic-bezier(.22,1,.36,1) 0.2s forwards;\
-\}\
-\
-@keyframes dropPin \{\
-  to \{ opacity: 1; transform: translateY(0); \}\
-\}\
-\
-.hero-eyebrow \{\
-  font-family: 'DM Sans', sans-serif;\
-  font-size: 10px;\
-  font-weight: 500;\
-  letter-spacing: 0.22em;\
-  text-transform: uppercase;\
-  color: var(--gold);\
-  margin-bottom: 12px;\
-  opacity: 0;\
-  animation: fadeUp 0.6s ease 0.5s forwards;\
-\}\
-\
-.hero-name \{\
-  font-family: 'Cormorant Garamond', serif;\
-  font-size: clamp(38px, 9vw, 52px);\
-  font-weight: 300;\
-  line-height: 1.05;\
-  letter-spacing: -0.01em;\
-  color: var(--parchment);\
-  opacity: 0;\
-  animation: fadeUp 0.6s ease 0.65s forwards;\
-\}\
-\
-.hero-name em \{\
-  font-style: italic;\
-  color: var(--gold);\
-\}\
-\
-.city-line \{\
-  font-family: 'Cormorant Garamond', serif;\
-  font-size: clamp(13px, 3.5vw, 16px);\
-  font-weight: 300;\
-  letter-spacing: 0.28em;\
-  text-transform: uppercase;\
-  color: var(--muted);\
-  margin-top: 10px;\
-  overflow: hidden;\
-  white-space: nowrap;\
-  border-right: 1px solid var(--gold);\
-  width: 0;\
-  animation: typeCity 1.4s steps(26, end) 1s forwards, blinkCaret 0.7s step-end 1s 3;\
-\}\
-\
-@keyframes typeCity \{\
-  from \{ width: 0; opacity: 1; \}\
-  to \{ width: 22em; opacity: 1; \}\
-\}\
-\
-@keyframes blinkCaret \{\
-  50% \{ border-color: transparent; \}\
-\}\
-\
-.hero-tagline \{\
-  font-size: 13px;\
-  font-weight: 300;\
-  color: var(--muted);\
-  line-height: 1.65;\
-  margin-top: 20px;\
-  max-width: 300px;\
-  opacity: 0;\
-  animation: fadeUp 0.6s ease 1.4s forwards;\
-\}\
-\
-.divider \{\
-  width: 40px;\
-  height: 1px;\
-  background: var(--gold);\
-  margin: 32px auto;\
-  opacity: 0;\
-  animation: fadeUp 0.4s ease 1.6s forwards;\
-\}\
-\
-.categories \{\
-  width: 100%;\
-  max-width: 480px;\
-  padding: 0 24px;\
-  display: flex;\
-  flex-wrap: wrap;\
-  gap: 8px;\
-  justify-content: center;\
-  margin-bottom: 32px;\
-  opacity: 0;\
-  animation: fadeUp 0.6s ease 1.9s forwards;\
-\}\
-\
-.pill \{\
-  font-size: 11px;\
-  font-weight: 400;\
-  letter-spacing: 0.08em;\
-  padding: 6px 14px;\
-  border: 1px solid rgba(242,237,228,0.15);\
-  border-radius: 20px;\
-  color: var(--muted);\
-  white-space: nowrap;\
-\}\
-\
-.links \{\
-  width: 100%;\
-  max-width: 480px;\
-  padding: 0 24px 64px;\
-  display: flex;\
-  flex-direction: column;\
-  gap: 14px;\
-  opacity: 0;\
-  animation: fadeUp 0.6s ease 1.7s forwards;\
-\}\
-\
-.link-card \{\
-  display: flex;\
-  min-height: 76px;\
-  align-items: center;\
-  gap: 18px;\
-  background: var(--card-bg);\
-  color: var(--black);\
-  text-decoration: none;\
-  border-radius: 4px;\
-  padding: 20px 22px;\
-  transition: transform 0.2s ease, box-shadow 0.2s ease;\
-  border-left: 3px solid transparent;\
-\}\
-\
-.link-card:hover \{\
-  transform: translateY(-2px);\
-  box-shadow: 0 8px 32px rgba(0,0,0,0.25);\
-  border-left-color: var(--gold);\
-\}\
-\
-.link-card.accent \{\
-  background: var(--gold);\
-  color: var(--black);\
-\}\
-\
-.link-card.accent:hover \{\
-  border-left-color: var(--black);\
-\}\
-\
-.link-icon \{\
-  font-size: 22px;\
-  flex-shrink: 0;\
-  width: 36px;\
-  text-align: center;\
-\}\
-\
-.link-text \{ flex: 1; \}\
-\
-.link-label \{\
-  font-family: 'Cormorant Garamond', serif;\
-  font-size: 17px;\
-  font-weight: 600;\
-  line-height: 1.2;\
-  display: block;\
-\}\
-\
-.link-sub \{\
-  font-size: 11px;\
-  font-weight: 300;\
-  letter-spacing: 0.04em;\
-  opacity: 0.6;\
-  margin-top: 3px;\
-  display: block;\
-\}\
-\
-.link-arrow \{\
-  font-size: 16px;\
-  opacity: 0.4;\
-  flex-shrink: 0;\
-\}\
-\
-.footer \{\
-  padding: 24px;\
-  text-align: center;\
-  opacity: 0;\
-  animation: fadeUp 0.4s ease 2.1s forwards;\
-\}\
-\
-.footer a \{\
-  font-size: 11px;\
-  letter-spacing: 0.14em;\
-  text-transform: uppercase;\
-  color: var(--muted);\
-  text-decoration: none;\
-\}\
-\
-.footer a:hover \{ color: var(--gold); \}\
-\
-@keyframes fadeUp \{\
-  from \{ opacity: 0; transform: translateY(10px); \}\
-  to \{ opacity: 1; transform: translateY(0); \}\
-\}\
-\
-@media (prefers-reduced-motion: reduce) \{\
-  * \{ animation: none !important; opacity: 1 !important; transform: none !important; \}\
-\}\
-</style>\
-</head>\
-<body>\
-\
-<section class="hero">\
-  <svg class="pin-icon" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">\
-    <path d="M24 4C16.268 4 10 10.268 10 18c0 10.5 14 26 14 26s14-15.5 14-26c0-7.732-6.268-14-14-14z" fill="#C9A84C" opacity="0.9"/>\
-    <circle cx="24" cy="18" r="5" fill="#0D0B09"/>\
-  </svg>\
-  <p class="hero-eyebrow">Baku \'b7 Azerbaijan</p>\
-  <h1 class="hero-name">Rozalina's<br><em>Food Guide</em></h1>\
-  <p class="city-line">personally tested places</p>\
-  <p class="hero-tagline">A carefully curated collection of cafes, restaurants, local favorites and hidden gems in Baku \'97 including exactly what I recommend ordering at each location.</p>\
-</section>\
-\
-<div class="divider"></div>\
-\
-<div class="categories">\
-  <span class="pill">&#9749; Coffee Shops</span>\
-  <span class="pill">&#127869; Food Anytime</span>\
-  <span class="pill">&#127462;&#127487; Local Cuisine</span>\
-  <span class="pill">&#127839; Doners</span>\
-</div>\
-\
-<div class="links">\
-  <a class="link-card accent" href="https://www.google.com/maps/d/viewer?mid=1e2nQ2I352NgJIxfKma5hfV-NvSs36bU" target="_blank" rel="noopener">\
-    <span class="link-icon">&#128506;</span>\
-    <span class="link-text">\
-      <span class="link-label">Full Guide &#8212; With Order Notes</span>\
-      <span class="link-sub">43 pins &middot; what to order at each spot</span>\
-    </span>\
-    <span class="link-arrow">&#8594;</span>\
-  </a>\
-  <a class="link-card" href="https://maps.app.goo.gl/MCaXUrDx7yUmY54c8" target="_blank" rel="noopener">\
-    <span class="link-icon">&#128205;</span>\
-    <span class="link-text">\
-      <span class="link-label">Save to Google Maps</span>\
-      <span class="link-sub">One tap &middot; opens in your Maps app</span>\
-    </span>\
-    <span class="link-arrow">&#8594;</span>\
-  </a>\
-  <a class="link-card" href="https://www.instagram.com/rozalinnas/" target="_blank" rel="noopener">\
-    <span class="link-icon">&#10022;</span>\
-    <span class="link-text">\
-      <span class="link-label">Follow on Instagram</span>\
-      <span class="link-sub">@rozalinnas &middot; Baku lifestyle &amp; travel</span>\
-    </span>\
-    <span class="link-arrow">&#8594;</span>\
-  </a>\
-</div>\
-\
-<footer class="footer">\
-  <a href="https://www.instagram.com/rozalinnas/">@rozalinnas</a>\
-</footer>\
-\
-</body>\
-</html>}
+:root {
+  --black: #0D0B09;
+  --parchment: #F2EDE4;
+  --gold: #C9A84C;
+  --muted: #8A7E74;
+  --card-bg: #FAF7F3;
+}
+
+body {
+  background: var(--black);
+  color: var(--parchment);
+  font-family: 'DM Sans', sans-serif;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero {
+  width: 100%;
+  max-width: 480px;
+  padding: 56px 32px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.pin-icon {
+  width: 48px;
+  height: 48px;
+  margin-bottom: 24px;
+  opacity: 0;
+  transform: translateY(-12px);
+  animation: dropPin 0.7s cubic-bezier(.22,1,.36,1) 0.2s forwards;
+}
+
+@keyframes dropPin {
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.hero-eyebrow {
+  font-family: 'DM Sans', sans-serif;
+  font-size: 10px;
+  font-weight: 500;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--gold);
+  margin-bottom: 12px;
+  opacity: 0;
+  animation: fadeUp 0.6s ease 0.5s forwards;
+}
+
+.hero-name {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(38px, 9vw, 52px);
+  font-weight: 300;
+  line-height: 1.05;
+  letter-spacing: -0.01em;
+  color: var(--parchment);
+  opacity: 0;
+  animation: fadeUp 0.6s ease 0.65s forwards;
+}
+
+.hero-name em {
+  font-style: italic;
+  color: var(--gold);
+}
+
+.city-line {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: clamp(13px, 3.5vw, 16px);
+  font-weight: 300;
+  letter-spacing: 0.28em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-top: 10px;
+  overflow: hidden;
+  white-space: nowrap;
+  border-right: 1px solid var(--gold);
+  width: 0;
+  animation: typeCity 1.4s steps(26, end) 1s forwards, blinkCaret 0.7s step-end 1s 3;
+}
+
+@keyframes typeCity {
+  from { width: 0; opacity: 1; }
+  to { width: 22em; opacity: 1; }
+}
+
+@keyframes blinkCaret {
+  50% { border-color: transparent; }
+}
+
+.hero-tagline {
+  font-size: 13px;
+  font-weight: 300;
+  color: var(--muted);
+  line-height: 1.65;
+  margin-top: 20px;
+  max-width: 300px;
+  opacity: 0;
+  animation: fadeUp 0.6s ease 1.4s forwards;
+}
+
+.divider {
+  width: 40px;
+  height: 1px;
+  background: var(--gold);
+  margin: 32px auto;
+  opacity: 0;
+  animation: fadeUp 0.4s ease 1.6s forwards;
+}
+
+.categories {
+  width: 100%;
+  max-width: 480px;
+  padding: 0 24px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+  margin-bottom: 32px;
+  opacity: 0;
+  animation: fadeUp 0.6s ease 1.9s forwards;
+}
+
+.pill {
+  font-size: 11px;
+  font-weight: 400;
+  letter-spacing: 0.08em;
+  padding: 6px 14px;
+  border: 1px solid rgba(242,237,228,0.15);
+  border-radius: 20px;
+  color: var(--muted);
+  white-space: nowrap;
+}
+
+.links {
+  width: 100%;
+  max-width: 480px;
+  padding: 0 24px 64px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  opacity: 0;
+  animation: fadeUp 0.6s ease 1.7s forwards;
+}
+
+.link-card {
+  display: flex;
+  min-height: 76px;
+  align-items: center;
+  gap: 18px;
+  background: var(--card-bg);
+  color: var(--black);
+  text-decoration: none;
+  border-radius: 4px;
+  padding: 20px 22px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  border-left: 3px solid transparent;
+}
+
+.link-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.25);
+  border-left-color: var(--gold);
+}
+
+.link-card.accent {
+  background: var(--gold);
+  color: var(--black);
+}
+
+.link-card.accent:hover {
+  border-left-color: var(--black);
+}
+
+.link-icon {
+  font-size: 22px;
+  flex-shrink: 0;
+  width: 36px;
+  text-align: center;
+}
+
+.link-text { flex: 1; }
+
+.link-label {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 1.2;
+  display: block;
+}
+
+.link-sub {
+  font-size: 11px;
+  font-weight: 300;
+  letter-spacing: 0.04em;
+  opacity: 0.6;
+  margin-top: 3px;
+  display: block;
+}
+
+.link-arrow {
+  font-size: 16px;
+  opacity: 0.4;
+  flex-shrink: 0;
+}
+
+.footer {
+  padding: 24px;
+  text-align: center;
+  opacity: 0;
+  animation: fadeUp 0.4s ease 2.1s forwards;
+}
+
+.footer a {
+  font-size: 11px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--muted);
+  text-decoration: none;
+}
+
+.footer a:hover { color: var(--gold); }
+
+@keyframes fadeUp {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * { animation: none !important; opacity: 1 !important; transform: none !important; }
+}
+</style>
+</head>
+<body>
+
+<section class="hero">
+  <svg class="pin-icon" viewBox="0 0 48 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <path d="M24 4C16.268 4 10 10.268 10 18c0 10.5 14 26 14 26s14-15.5 14-26c0-7.732-6.268-14-14-14z" fill="#C9A84C" opacity="0.9"/>
+    <circle cx="24" cy="18" r="5" fill="#0D0B09"/>
+  </svg>
+  <p class="hero-eyebrow">Baku · Azerbaijan</p>
+  <h1 class="hero-name">Rozalina's<br><em>Food Guide</em></h1>
+  <p class="city-line">personally tested places</p>
+  <p class="hero-tagline">A carefully curated collection of cafes, restaurants, local favorites and hidden gems in Baku — including exactly what I recommend ordering at each location.</p>
+</section>
+
+<div class="divider"></div>
+
+<div class="categories">
+  <span class="pill">&#9749; Coffee Shops</span>
+  <span class="pill">&#127869; Food Anytime</span>
+  <span class="pill">&#127462;&#127487; Local Cuisine</span>
+  <span class="pill">&#127839; Doners</span>
+</div>
+
+<div class="links">
+  <a class="link-card accent" href="https://www.google.com/maps/d/viewer?mid=1e2nQ2I352NgJIxfKma5hfV-NvSs36bU" target="_blank" rel="noopener">
+    <span class="link-icon">&#128506;</span>
+    <span class="link-text">
+      <span class="link-label">Full Guide &#8212; With Order Notes</span>
+      <span class="link-sub">43 pins &middot; what to order at each spot</span>
+    </span>
+    <span class="link-arrow">&#8594;</span>
+  </a>
+  <a class="link-card" href="https://maps.app.goo.gl/MCaXUrDx7yUmY54c8" target="_blank" rel="noopener">
+    <span class="link-icon">&#128205;</span>
+    <span class="link-text">
+      <span class="link-label">Save to Google Maps</span>
+      <span class="link-sub">One tap &middot; opens in your Maps app</span>
+    </span>
+    <span class="link-arrow">&#8594;</span>
+  </a>
+  <a class="link-card" href="https://www.instagram.com/rozalinnas/" target="_blank" rel="noopener">
+    <span class="link-icon">&#10022;</span>
+    <span class="link-text">
+      <span class="link-label">Follow on Instagram</span>
+      <span class="link-sub">@rozalinnas &middot; Baku lifestyle &amp; travel</span>
+    </span>
+    <span class="link-arrow">&#8594;</span>
+  </a>
+</div>
+
+<footer class="footer">
+  <a href="https://www.instagram.com/rozalinnas/">@rozalinnas</a>
+</footer>
+
+</body>
+</html>
